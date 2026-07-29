@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Calendar & Events — Hester Grove Baptist Church</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="mark"></span> Hester Grove</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-key="home">Home</a></li>
+      <li><a href="about.html" data-key="about">About</a></li>
+      <li><a href="pastor.html" data-key="pastor">Our Pastor</a></li>
+      <li><a href="leadership.html" data-key="leadership">Leadership</a></li>
+      <li><a href="calendar.html" data-key="calendar" class="active">Calendar</a></li>
+      <li><a href="announcements.html" data-key="announcements">Announcements</a></li>
+      <li><a href="history.html" data-key="history">Our History</a></li>
+      <li><a href="give.html" data-key="give">Give</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Calendar &amp; Events</span>
+    <h1>What's happening at Hester Grove</h1>
+  </div>
+</section>
+
+<section class="section-cream">
+  <div class="container">
+    <div class="cal-controls">
+      <div class="cal-nav">
+        <button id="calPrev" aria-label="Previous month">‹</button>
+        <h2 id="calLabel">January 2026</h2>
+        <button id="calNext" aria-label="Next month">›</button>
+      </div>
+      <div class="cal-legend">
+        <span><span class="dot dot-event"></span> Church event / Bible study / communion</span>
+        <span><span class="dot dot-birthday"></span> Member birthday</span>
+      </div>
+    </div>
+
+    <div class="cal-grid" id="calGrid"></div>
+
+    <div class="cal-panel" id="calPanel"></div>
+
+    <p class="small" style="margin-top:28px;">Tap any highlighted day to see what's happening. Bible Study is every Wednesday at 6:00 PM, and Communion is the first Sunday of each month at 11:00 AM — both are marked automatically all year.</p>
+  </div>
+</section>
+
+<section class="section-dim">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow-line">Weekly Wednesday</div>
+      <h2>Bible Study — In Person &amp; Online</h2>
+      <p>Join us in the sanctuary at 6:00 PM, or connect from home over Zoom.</p>
+    </div>
+    <div class="placeholder-block">
+      <div class="icon">💻</div>
+      <h3>Zoom Bible Study Link</h3>
+      <p>QR code and meeting link coming soon — check back here or ask in the church office for this week's access details.</p>
+      <div class="qr-box">QR code<br>placeholder</div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Hester Grove Baptist Church</h4>
+        <p style="color:var(--cream-dim); max-width:34ch;">"The Church with a Big Heart" — changing lives in an unchanging world.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <a href="https://maps.google.com/?q=590+Wheelers+Church+Rd,+Hurdle+Mills,+NC+27541" target="_blank" rel="noopener">590 Wheelers Church Rd<br>Hurdle Mills, NC 27541</a>
+        <a href="tel:+13365994429">(336) 599-4429</a>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="calendar.html">Calendar &amp; Events</a>
+        <a href="give.html">Give Online</a>
+        <a href="leadership.html">Church Leadership</a>
+        <a href="history.html">Our History</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Hester Grove Baptist Church. All rights reserved.</span>
+      <span>Hurdle Mills, North Carolina</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/main.js"></script>
+
+<script src="assets/calendar-data.js"></script>
+<script src="assets/calendar.js"></script>
+</body>
+</html>
