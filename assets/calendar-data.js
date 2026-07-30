@@ -126,11 +126,11 @@ const BIRTHDAYS = [
   { month:11, day:29, name:"Linda O'Kelly" },
 ];
 
-// Recurring: Bible Study every Wednesday 6:00 PM; Communion first Sunday of month 11:00 AM
+// Recurring: Bible Study every Wednesday 6:00-7:30 PM; Communion first Sunday of month 11:00 AM
 function getRecurringEvents(year, month, day){
   const events = [];
   const d = new Date(year, month, day);
-  if (d.getDay() === 3){ events.push({ title:"Bible Study", time:"6:00 PM" }); }
+  if (d.getDay() === 3){ events.push({ title:"Bible Study", time:"6:00 PM - 7:30 PM" }); }
   if (d.getDay() === 0 && day <= 7){ events.push({ title:"Communion", time:"11:00 AM" }); }
   return events;
 }
