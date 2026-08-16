@@ -53,17 +53,18 @@ const SPECIAL_EVENTS = [
   { month:6, day:4, title:"Independence Day" },
   { month:6, day:19, title:"Ushers' Anniversary", time:"2:00 PM" },
   // August
-  { month:7, day:9, title:"Heaven Practice (Pulpit Swap) — Rev. Fischer, Hillsborough Presbyterian" },
   { month:7, day:15, title:"Youth Movie Night" },
+  { month:7, day:22, title:"Church Meeting", time:"1:00 PM" },
+  { month:7, day:23, title:"Heaven Practice (Pulpit Swap) — Rev. Fischer, Hillsborough Presbyterian Church preaches at Hester Grove", time:"11:00 AM" },
+  { month:7, day:23, title:"Pastor Neal preaches at St. Matthews, Hillsborough, NC", time:"10:00 AM" },
+  { month:7, day:25, title:"Pastor Neal preaches — Life Outreach Worship Center Summer Revival, Roxboro, NC", time:"7:00 PM" },
   // September
-  { month:8, day:5, title:"Church Meeting", time:"1:00 PM" },
   { month:8, day:7, title:"Labor Day" },
-  { month:8, day:18, title:"Rainbow Tea Fundraiser", time:"2:00 PM" },
-  { month:8, day:23, title:"Fall Revival", time:"7:00 PM" },
-  { month:8, day:24, title:"Fall Revival", time:"7:00 PM" },
-  { month:8, day:25, title:"Fall Revival", time:"7:00 PM" },
-  { month:8, day:26, title:"Fall Revival", time:"7:00 PM" },
-  { month:8, day:27, title:"Fall Revival", time:"7:00 PM" },
+  { month:8, day:13, title:"Pastor Neal preaches — Compassionate Ministries Family & Friends Day", time:"2:00 PM" },
+  { month:8, day:19, title:"Rainbow Tea Fundraiser", time:"2:00 PM" },
+  { month:8, day:23, title:"Fall Revival — Rev. George Crews, Lattisville Grove Missionary Baptist Church, Hurdle Mills, NC", time:"7:00 PM" },
+  { month:8, day:24, title:"Fall Revival — Rev. Vax Allen, Union Street Missionary Baptist Church, Danville, VA", time:"7:00 PM" },
+  { month:8, day:25, title:"Fall Revival — Rev. Keisha Bluford, Grace Outreach Ministry, Mebane, NC", time:"7:00 PM" },
   // October
   { month:9, day:3, title:"Church Meeting", time:"1:00 PM" },
   { month:9, day:3, title:"Old Time Religion Day", time:"2:00 PM" },
@@ -126,11 +127,11 @@ const BIRTHDAYS = [
   { month:11, day:29, name:"Linda O'Kelly" },
 ];
 
-// Recurring: Bible Study every Wednesday 6:00-7:30 PM; Communion first Sunday of month 11:00 AM
+// Recurring: Bible Study every Wednesday 6:30-7:30 PM; Communion first Sunday of month 11:00 AM
 function getRecurringEvents(year, month, day){
   const events = [];
   const d = new Date(year, month, day);
-  if (d.getDay() === 3){ events.push({ title:"Bible Study", time:"6:00 PM - 7:30 PM" }); }
+  if (d.getDay() === 3){ events.push({ title:"Bible Study", time:"6:30 PM - 7:30 PM" }); }
   if (d.getDay() === 0 && day <= 7){ events.push({ title:"Communion", time:"11:00 AM" }); }
   return events;
 }
