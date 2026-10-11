@@ -72,7 +72,7 @@ const SPECIAL_EVENTS = [
   { month:9, day:18, title:"Hester Grove Choir Anniversary", time:"2:00 PM" },
   { month:9, day:24, title:"Hallelujah Night", time:"4:00 PM" },
   { month:9, day:24, title:"Trunk or Treat", time:"6:00 PM" },
-  { month:9, day:25, title:"Clergy Appreciation Program — Min. Lousie Watts, Piney Grove Missionary Baptist Church (guest speaker)", time:"11:00 AM" },
+  { month:9, day:25, title:"Clergy Appreciation Program — Rev. Kenneth Bradsher Jr., Lee's Chapel Missionary Baptist Church (guest speaker)", time:"11:00 AM" },
   // November
   { month:10, day:11, title:"Veterans Day" },
   { month:10, day:22, title:"Pastor Preaches @ Hillsborough Presbyterian", time:"6:00 PM" },
