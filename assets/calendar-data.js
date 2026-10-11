@@ -69,6 +69,7 @@ const SPECIAL_EVENTS = [
   { month:9, day:1, title:"Church Meeting", time:"1:00 PM" },
   { month:9, day:11, title:"Pastor Neal's 2nd Anniversary — Rev. Brenda Hunt Moore, New Hope Person Missionary Baptist Church, Timberlake, NC (guest speaker)", time:"11:00 AM" },
   { month:9, day:11, title:"Pastor Neal's 2nd Anniversary Afternoon Service — Elder Linda Cohen, St. Mariah Holiness Church, Reidsville, NC (guest speaker)", time:"2:00 PM" },
+  { month:9, day:18, title:"Hester Grove Choir Anniversary", time:"2:00 PM" },
   { month:9, day:24, title:"Hallelujah Night", time:"4:00 PM" },
   { month:9, day:24, title:"Trunk or Treat", time:"6:00 PM" },
   { month:9, day:25, title:"Clergy Appreciation Program — Min. Lousie Watts, Piney Grove Missionary Baptist Church (guest speaker)", time:"11:00 AM" },
