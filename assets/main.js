@@ -41,3 +41,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
+// Gallery link: added to the menu and footer of every page
+document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.querySelector('.nav-links');
+  if (nav && !nav.querySelector('a[href="gallery.html"]')) {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = 'gallery.html';
+    a.setAttribute('data-key', 'gallery');
+    a.textContent = 'Gallery';
+    li.appendChild(a);
+    const give = nav.querySelector('a[href="give.html"]');
+    nav.insertBefore(li, give ? give.parentElement : null);
+  }
+  const explore = Array.from(document.querySelectorAll('.footer-grid h4')).find(h => h.textContent.trim() === 'Explore');
+  if (explore && !document.querySelector('.footer-grid a[href="gallery.html"]')) {
+    const link = document.createElement('a');
+    link.href = 'gallery.html';
+    link.textContent = 'Photo Gallery';
+    explore.parentElement.appendChild(link);
+  }
+});
