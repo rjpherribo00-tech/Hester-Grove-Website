@@ -79,7 +79,7 @@ letter-spacing:.02em; position:relative; padding: 4px 0;
 .nav-links a.active{ color: var(--gold); }
 .nav-toggle{ display:none; background:none; border:none; color:var(--cream); font-size:1.6rem; cursor:pointer; }
 
-@media (max-width: 820px){
+@media (max-width: 1060px){
 .nav-links{
 position:fixed; top:66px; left:0; right:0;
 height: calc(100vh - 66px); height: calc(100dvh - 66px);
@@ -466,4 +466,4 @@ color: rgba(16,22,31,.4); text-align:center; padding:20px; gap:10px;
   .lb-next{ right:calc(50% - 56px); }
   .lb-figure img{ max-height:66vh; }
 }
-@media (min-width: 821px) and (max-width: 1000px){ .nav-links{ gap:18px; } }
+.brand, .nav-links a{ white-space:nowrap; }
