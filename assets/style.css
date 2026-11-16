@@ -467,3 +467,12 @@ color: rgba(16,22,31,.4); text-align:center; padding:20px; gap:10px;
   .lb-figure img{ max-height:66vh; }
 }
 .brand, .nav-links a{ white-space:nowrap; }
+
+.gal-jump{ display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin: -28px auto 48px; }
+.gal-jump a{
+  padding: 9px 18px; border-radius:999px; border:1px solid var(--line-dark);
+  background:#fff; font-size:.86rem; font-weight:600; color: var(--ink);
+  transition: border-color .2s ease, color .2s ease, transform .2s ease;
+}
+.gal-jump a:hover{ border-color: var(--gold); color: var(--grove); transform: translateY(-2px); }
+.gal-album{ scroll-margin-top: 90px; }
